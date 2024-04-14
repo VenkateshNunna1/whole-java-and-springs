@@ -1,0 +1,5 @@
+package com.spring.springbootdemo.Exceptions;
+
+public class ExceptionManger {
+
+}

@@ -1,0 +1,11 @@
+127.0.0.1 - - [29/Jan/2024:16:38:29 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [29/Jan/2024:16:38:30 +0530] "GET /Food-SpringMVC/AdminMenu.jsp HTTP/1.1" 200 216
+0:0:0:0:0:0:0:1 - - [29/Jan/2024:16:38:30 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [29/Jan/2024:16:39:16 +0530] "GET /Food-SpringMVC/addadmin HTTP/1.1" 200 439
+0:0:0:0:0:0:0:1 - - [29/Jan/2024:16:39:34 +0530] "POST /Food-SpringMVC/saveadmin HTTP/1.1" 200 322
+0:0:0:0:0:0:0:1 - - [29/Jan/2024:16:39:41 +0530] "GET /Food-SpringMVC/validateadmin?email=venky%40gmail.com&password=venky HTTP/1.1" 200 255
+0:0:0:0:0:0:0:1 - - [29/Jan/2024:16:39:44 +0530] "GET /Food-SpringMVC/addproduct HTTP/1.1" 200 417
+0:0:0:0:0:0:0:1 - - [29/Jan/2024:16:46:45 +0530] "POST /Food-SpringMVC/saveproduct HTTP/1.1" 200 236
+0:0:0:0:0:0:0:1 - - [29/Jan/2024:16:46:46 +0530] "GET /Food-SpringMVC/addproduct HTTP/1.1" 200 417
+0:0:0:0:0:0:0:1 - - [29/Jan/2024:16:47:02 +0530] "POST /Food-SpringMVC/saveproduct HTTP/1.1" 200 236
+0:0:0:0:0:0:0:1 - - [29/Jan/2024:16:47:05 +0530] "GET /Food-SpringMVC/viewallproduct HTTP/1.1" 200 660

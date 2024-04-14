@@ -1,0 +1,1 @@
+package com.hibernate.pan_person_OneToOne;

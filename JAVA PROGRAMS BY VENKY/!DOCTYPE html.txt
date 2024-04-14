@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<a  href="addadmin">Create Account</a><br>
+<a href="loginadmin.jsp">Login</a><br>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form:form action="saveadmin" modelAttribute="admin">
+enter name:<form:input path="name"/><br>
+enter email:<form:input path="email"/><br>
+enter password:<form:input type="password" path="password"/><br>
+<input type="submit">
+</form:form>
+</body>
+</html>

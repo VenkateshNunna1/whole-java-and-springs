@@ -1,0 +1,60 @@
+package com.spring.springbootdemo.controllers;
+
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.spring.springbootdemo.entities.Student;
+import com.spring.springbootdemo.helper.ResponseStructure;
+import com.spring.springbootdemo.repositories.StudentRepository;
+
+@RestController
+public class StudentController {
+	  @Autowired
+     StudentRepository sr;
+	  @PostMapping("/save")
+	  public ResponseStructure<Student> saveData(@RequestBody Student student) {
+		  sr.save(student);
+		  ResponseStructure<Student> rs = new ResponseStructure<Student>();
+		  rs.setStatusCode(HttpStatus.CREATED.value());
+		  rs.setData(student);
+		  rs.setMessage("data inserted successfully");
+		  return rs;
+	  }
+	  @GetMapping("/fetchbyid")
+	  public ResponseStructure<Student> fetchData(@RequestParam("id") int id){
+		  try {
+			Optional<Student> option=  sr.findById(id);
+			 Student s=  option.get();
+			 ResponseStructure<Student> rs = new ResponseStructure<Student>();
+			 rs.setStatusCode(HttpStatus.FOUND.value());
+			 rs.setData(s);
+			 rs.setMessage("data found");
+			 return rs;
+		  }
+		  catch(NoSuchElementException n) {
+			  ResponseStructure<Student> rs = new ResponseStructure<Student>();
+			  rs.setStatusCode(HttpStatus.NOT_FOUND.value());
+			  rs.setData(null);
+			  rs.setMessage("data not found");
+			  return rs;
+		  }
+	  }
+	  @GetMapping("/fetchdatabyname")
+	  public ResponseStructure<List<Student>> fetchDataByName(@RequestParam("name") String name){
+		     List<Student> student=  sr.findDataByName(name);
+		     ResponseStructure<List<Student>> rs = new ResponseStructure<List<Student>>();
+		     rs.setStatusCode(HttpStatus.FOUND.value());
+		     rs.setData(student);
+		     rs.setMessage("data found");
+		     return rs;
+	  }
+}

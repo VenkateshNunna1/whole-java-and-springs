@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.form{
+		margin-left: 500px;
+		
+	}
+	div{
+		margin-top:10px;
+	}
+	.button{
+		margin-left:80px;
+	}
+	
+	
+</style>
+</head>
+<body>
+<form action="savedata.jsp" class="form">
+	<div>
+		enter id:<input type="text" name="id">
+	</div>
+	<div>
+		enter name:<input type="text" name="name">
+	</div>
+	<div>
+		enter age:<input type="text" name="age">
+
+	</div>
+	
+	<input type="submit" class="button">
+</form>
+</body>
+</html>

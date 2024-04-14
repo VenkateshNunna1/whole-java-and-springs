@@ -1,0 +1,16 @@
+package com.spring.springbootdemo.repositories;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.spring.springbootdemo.entities.Student;
+
+public interface StudentRepository extends JpaRepository<Student, Integer>{
+     public List<Student> fetchDataByName(String name);
+	 public List<Student> fetchDataByAge(int age);
+	 public List<Student> fetchDataByYop(int yop);
+	 
+
+}

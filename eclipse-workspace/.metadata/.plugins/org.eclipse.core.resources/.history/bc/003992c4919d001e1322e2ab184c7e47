@@ -1,0 +1,12 @@
+package com.game;
+
+import java.util.Random;
+
+public class Gamecode {
+	public static void main(String[] args) {
+		Random r = new Random();
+		 int s=r.nextInt(10);
+		 System.out.println(s);
+	}
+
+}

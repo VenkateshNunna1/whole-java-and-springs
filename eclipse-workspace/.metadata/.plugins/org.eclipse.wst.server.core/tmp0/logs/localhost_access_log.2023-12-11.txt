@@ -1,0 +1,12 @@
+127.0.0.1 - - [11/Dec/2023:15:50:49 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [11/Dec/2023:15:55:19 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/Dec/2023:15:55:37 +0530] "GET /sessiontracking/Httpsession.html HTTP/1.1" 200 202
+0:0:0:0:0:0:0:1 - - [11/Dec/2023:15:55:37 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [11/Dec/2023:15:55:40 +0530] "POST /sessiontracking/session HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [11/Dec/2023:15:57:04 +0530] "GET /sessiontracking/Httpsession.html HTTP/1.1" 200 202
+0:0:0:0:0:0:0:1 - - [11/Dec/2023:15:57:06 +0530] "POST /sessiontracking/session HTTP/1.1" 200 -
+127.0.0.1 - - [11/Dec/2023:16:35:48 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/Dec/2023:16:35:49 +0530] "GET /sessiontracking/httptask1.html HTTP/1.1" 200 392
+0:0:0:0:0:0:0:1 - - [11/Dec/2023:16:35:49 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [11/Dec/2023:18:25:34 +0530] "POST /sessiontracking/se1 HTTP/1.1" 200 192
+0:0:0:0:0:0:0:1 - - [11/Dec/2023:18:25:35 +0530] "POST /sessiontracking/se2 HTTP/1.1" 200 -

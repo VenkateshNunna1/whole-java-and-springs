@@ -1,0 +1,28 @@
+package com.java.recursion;
+
+public class Strong {
+
+	public static void main(String[] args) {
+	int n=145;
+	int a=strong(n);
+	System.out.println(a);
+
+	}
+	 static int sum=0;
+	static int strong(int n) {
+		int rem=n%10;
+		int fact=fact(rem);
+		sum=sum+fact;
+		n=n/10;
+		return strong(n);
+		
+		
+	}
+	static int fact(int n) {
+		if(n==0) {
+			return 1;
+		}
+		return n*fact(n-1);
+	}
+
+}

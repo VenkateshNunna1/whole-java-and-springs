@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.linkedlist.Node"/>
+    <fullyQualifiedTypeName name="com.linkedlist.LL"/>
+    <fullyQualifiedTypeName name="com.practise.LL"/>
+    <fullyQualifiedTypeName name="com.Arraylist.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

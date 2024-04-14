@@ -1,0 +1,12 @@
+package com.LL;
+
+public class Main {
+
+	public static void main(String[] args) {
+		LL l = new LL();
+		l.insertFirst(20);
+		l.insertFirst(40);
+		System.out.println(l.size());
+	}
+
+}

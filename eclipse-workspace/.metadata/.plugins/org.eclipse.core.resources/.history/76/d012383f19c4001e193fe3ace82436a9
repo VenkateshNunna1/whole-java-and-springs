@@ -1,0 +1,5 @@
+package com.spring.springbootdemo.repositories;
+
+public interface UserRepository {
+
+}

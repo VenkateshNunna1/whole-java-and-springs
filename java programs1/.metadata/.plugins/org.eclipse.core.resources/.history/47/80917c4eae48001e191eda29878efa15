@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class pattern6 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		int spaces=n-1;
+		for(int i=1;i<=n;i++) {
+			int num1=i;
+			for(int j=1;j<=spaces;j++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=num1;j++) {
+				System.out.print(j);
+			}
+			for(int j=1;j<num1;j++) {
+				System.out.print(j);
+			}
+			
+			System.out.println();
+			spaces=spaces-1;
+		}
+		int spaces1=0;
+		for(int i=1;i<=n;i++) {
+			int num1=1;
+			for(int j=1;j<=spaces1;j++) {
+				System.out.print(" ");
+			}
+			for(int j=n;j<=num1;j++) {
+				System.out.print(j);
+			}
+			for(int j=1;j<num1;j++) {
+				System.out.print(j);
+			}
+			
+			System.out.println();
+			spaces1=spaces1+1;
+		}
+
+	}
+
+}

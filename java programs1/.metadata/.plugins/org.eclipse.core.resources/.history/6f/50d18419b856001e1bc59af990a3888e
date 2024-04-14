@@ -1,0 +1,14 @@
+package strngs;
+import java.util.Scanner;
+public class palindrome {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String s = in.nextLine();
+		char[] c= s.toCharArray();
+		for(char ch:c) {
+			System.out.println(ch);
+		}
+	}
+
+}
